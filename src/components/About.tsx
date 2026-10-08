@@ -1,6 +1,6 @@
 import "../styles/About.css";
 import FadeIn from "./FadeIn";
-import jasonImage from "../assets/basketball.jpg";
+import jasonImage from "../assets/jason4.jpg";
 
 const techstack = ["Python", "React", "Node.js", "TypeScript"];
 
@@ -40,7 +40,10 @@ const About = () => {
         </FadeIn>
 
         <FadeIn className="about-image" direction="right" delay={100}>
-          <img src={jasonImage} alt="Jason Chen" />
+          <img
+            src={jasonImage}
+            alt="Jason Chen attending a professional conference"
+          />
         </FadeIn>
       </div>
     </div>
