@@ -3,10 +3,11 @@ import "../styles/Education_Card.css";
 
 const relevantCourses = [
   "Data Structures and Algorithms",
-  "Intro to AI",
-  "Database Systems",
+  "Operating Systems",
   "Software Development",
+  "Artificial Intelligence",
   "Object Oriented Programming",
+  "Database Systems",
 ];
 
 const Education_Card = () => {
