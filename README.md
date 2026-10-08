@@ -7,7 +7,7 @@ The second iteration of <a href="https://jason-chen.dev">jason-chen.dev<a>
 </p>
 
 <p align="center">
-<img src="./src/assets/view.jpg" width="100%"/>
+<img src="./src/assets/view2.jpg" width="100%"/>
 
 </p>
 
