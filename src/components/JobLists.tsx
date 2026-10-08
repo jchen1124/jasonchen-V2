@@ -53,9 +53,9 @@ const JobLists = () => {
       title: "Software Engineer Intern @",
       duration: "June 2025 - August 2025",
       desc: [
-        "Fine-tuned and validated YOLOv8 detection models on security-focused aerial datasets, improving detection accuracy by 18% while meeting real-time latency and power constraints on airborne sensor platforms.",
-        "Developed automated data processing and training pipelines for 50K+ multi-source aerial images, standardizing COCO → YOLO annotations, reducing labeling errors by 30%, and cutting experiment turnaround time by 50%.",
-        "Optimized inference deployment for electro-optical and event-based cameras, profiling model performance to achieve under 100ms per-frame latency on resource-constrained airborne hardware.",
+        "Developed automated Python data pipelines using Roboflow and Ultralytics to process 50K+ aerial images,integrating dataset merging, COCO-to-YOLO conversion, annotation validation, and training automation.",
+        "Fine-tuned and evaluated YOLOv8 object detection models for drones, helicopters, and aircraft, improving mean Average Precision (mAP) by 18% through multi-source dataset preparation and model training.",
+        "Profiled and optimized model inference for electro-optical and event-based camera systems, achieving under 100 ms per-frame latency on resource-constrained airborne hardware.",
       ],
     },
     "Platinum Business Services LLC": {
