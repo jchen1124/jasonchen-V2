@@ -45,34 +45,12 @@
   flex: 0 0 auto;
 }
 
-.about-image::before {
-  content: "";
-  position: absolute;
-  top: -24px;
-  right: -20px;
-  z-index: 2;
-  width: 20px;
-  height: 20px;
-  border: 2px solid var(--green-tint);
-  box-shadow: 6px 6px 0 rgba(100, 255, 218, 0.16);
-  transform: rotate(45deg);
-  pointer-events: none;
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
-}
-
-.about-image:hover::before {
-  transform: rotate(45deg) translate(-2px, -2px);
-  box-shadow: 9px 9px 0 rgba(100, 255, 218, 0.22);
-}
-
 .about-image::after {
   content: "";
   position: absolute;
-  inset: 12px -12px -12px 12px;
-  border: 1px solid var(--line-soft);
-  border-radius: 10px;
+  inset: 14px -14px -14px 14px;
+  border: 1px solid rgba(100, 255, 218, 0.55);
+  border-radius: 12px;
   pointer-events: none;
   transition:
     transform 0.35s ease,
@@ -88,6 +66,7 @@
 
 .about-image img {
   display: block;
+  box-sizing: border-box;
   position: relative;
   z-index: 1;
   width: clamp(260px, 24vw, 320px);
@@ -96,8 +75,8 @@
   object-position: center;
   border-radius: 12px;
   margin-left: 0;
-  box-shadow: 0 24px 50px rgba(12, 43, 78, 0.3);
-  border: 1px solid rgba(244, 244, 244, 0.22);
+  box-shadow: 0 24px 50px rgba(12, 43, 78, 0.34);
+  border: 7px solid rgba(244, 244, 244, 0.9);
   transition:
     transform 0.35s ease,
     border-color 0.35s ease,
@@ -106,7 +85,7 @@
 
 .about-image:hover img {
   transform: translate(-3px, -3px);
-  border-color: rgba(100, 255, 218, 0.5);
+  border-color: rgba(255, 255, 255, 0.98);
   box-shadow: 0 28px 56px rgba(12, 43, 78, 0.38);
 }
 

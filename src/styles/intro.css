@@ -67,38 +67,52 @@
 
 .intro-image {
   position: relative;
+  flex: 0 0 auto;
+  margin-left: 30px;
 }
 
 .intro-image::before {
   content: "";
   position: absolute;
-  inset: 18px -18px -18px 18px;
-  border: 2px solid var(--green-tint);
-  border-radius: 10px;
-  opacity: 0.55;
-  transition: transform 0.35s ease, opacity 0.35s ease;
+  inset: 14px -14px -14px 14px;
+  border: 1px solid rgba(100, 255, 218, 0.55);
+  border-radius: 12px;
+  pointer-events: none;
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .intro-image img {
+  display: block;
+  box-sizing: border-box;
   position: relative;
   z-index: 1;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  margin-left: 30px;
-  box-shadow: 0 24px 55px rgba(12, 43, 78, 0.38);
-  border: 1px solid rgba(244, 244, 244, 0.18);
-  transition: transform 0.4s ease, filter 0.4s ease;
+  width: clamp(260px, 24vw, 300px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  box-shadow: 0 24px 55px rgba(12, 43, 78, 0.4);
+  border: 6px solid rgba(244, 244, 244, 0.9);
+  transition:
+    filter 0.4s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
   animation: heroImageFloat 6s ease-in-out infinite;
 }
 
 .intro-image:hover::before {
-  opacity: 0.9;
-  transform: translate(6px, -6px);
+  transform: translate(5px, 5px);
+  border-color: rgba(100, 255, 218, 0.85);
+  box-shadow: 0 0 22px rgba(100, 255, 218, 0.14);
 }
 
 .intro-image:hover img {
   filter: saturate(1.15) contrast(1.04);
+  border-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 28px 60px rgba(12, 43, 78, 0.46);
 }
 
 .intro-text {
@@ -204,12 +218,12 @@
   .intro-image {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .intro-image img {
-    max-width: 250px;
-    margin-left: 0;
+    width: min(250px, 78vw);
   }
 
   .intro-description {
